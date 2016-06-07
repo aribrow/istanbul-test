@@ -1,0 +1,28 @@
+{
+    "name": "test",
+    "description": "",
+    "main": "",
+    "authors": [
+        "test"
+    ],
+    "license": "MIT",
+    "moduleType": [],
+    "homepage": "",
+    "private": true,
+    "ignore": [
+        "**/.*",
+        "node_modules",
+        "bower_components",
+        "test",
+        "tests"
+    ],
+    "dependencies": {
+        "es5-shim": "~4.5.5",
+        "Jcrop": "~0.9.12",
+        "less": "*",
+        "jspdf": "~1.1",
+        "html2canvas": "~0.5",
+        "canvg": "*",
+        "ios-imagefile-megapixel": "*"
+    }
+}

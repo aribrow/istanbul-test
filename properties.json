@@ -1,0 +1,46 @@
+{
+    "builds": {
+        "default": {
+            "dest": "/portalapps/test",
+            "test": {
+                "ui5ResourcesDir": "http://localhost/sapui5/resources/"
+            }
+        }
+    },
+
+    "configs": {
+        "gruntConfig": {
+            "srcRoot": "build/grunt/config"
+        },
+        "output": {
+            "dir": "dist"
+        },
+
+        "timestamp": "",
+
+        "main": {
+            "moduleName": "com.test.main",
+            "srcRoot": "app",
+            "targetRoot": "<%= output.dir %>",
+            "prefix": "com/test/main",
+            "indexFile": "<%= main.srcRoot %>/index_production.html"
+        },
+
+        "thirdParty": {
+            "bowerRoot": "<%= main.srcRoot%>/libs/bower_components",
+            "vendorRoot": "<%= main.srcRoot%>/libs/vendor",
+            "output": "<%= output.dir %>/libs/third-party"
+        },
+
+        "test": {
+            "src": "test",
+            "host": "localhost",
+            "port": 9001,
+            "base": "<%= output.dir %>",
+            "dir": "<%= test.base %>/test",
+            "istanbulDir": "<%= test.base %>/test/specs/unit/qunit-istanbul"
+        }
+    }
+
+
+}
