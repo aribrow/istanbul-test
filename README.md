@@ -1,4 +1,4 @@
-This is a test project for implementing <strong>grunt-qunit-istanbul</strong>.
+This is a test <strong>SAPUI5</strong> project implementing <strong>grunt-qunit-istanbul</strong> for generating <strong>lcov</strong> reports.
 
 In this scenario, the JS file in the test page is being included with the <strong><em>jQuery.sap.require()</em></strong> command and the test task breaks.
 
